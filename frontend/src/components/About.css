@@ -1,0 +1,58 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.body-text {
+    color: white;
+}
+
+.accordion-wrapper {
+    max-width: 650px;
+    margin: 0 auto;        /* center the accordion */
+}
+
+.accordion-item {
+    margin-bottom: 23px;    /* Space between accordion items */
+    overflow: hidden;
+    box-shadow: 0px 4px 5px rgb(27, 27, 27);
+}
+
+.accordion-button {
+    padding: 15px 20px;
+    background-color: #161a2b !important;  
+    color: white !important;      
+    border: 1.5px solid #f0f0f0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.accordion-button:focus {
+    box-shadow: none;        /* removes blue focus ring */
+}
+
+.accordion-body {
+   padding: 22px 20px;
+   background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+    );
+   color: white;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+/* for ARROWS in accordions*/
+/* General arrow styles */
+.accordion-button::after {
+  background-image: none !important;      /* Remove Bootstrap's default arrow */
+  content: "▼";             /* Add custom arrow */
+  font-size: 1rem;
+  margin-left: auto;
+  transition: transform 0.2s ease;
+}
+
+/* Rotate arrow when open */
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}

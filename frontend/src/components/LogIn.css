@@ -1,0 +1,84 @@
+/* Make the page take full height and center the form */
+.login-page {
+  display: flex;
+  align-items: center;       /* vertical center */
+  justify-content: center;   /* horizontal center */
+  min-height: 100vh; 
+}
+
+.login-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  max-width: 400px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: white;
+}
+
+.brand-logo { 
+  font-size: 30px;
+  color: hotpink !important;
+  display: flex;
+  align-items: center;
+  user-select: none;         /* No text selection */
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+
+.tick-mark {
+  color: rgb(69, 182, 69);
+  font-size: 28px;
+  margin-left: -13px;
+  margin-top: 20px;
+}
+
+.login-container h3 {
+  color: black;
+  font-weight: bold;
+}
+
+.login-container .login-btn {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 10px 0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.input-group-icon {
+  position: absolute;
+  right: 12px;
+  font-size: 25px;
+  transform: translateY(-13%);
+  z-index: 10;
+  cursor: pointer;
+  color: #ff69b4;
+  background: transparent;    
+}

@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "ae71",
+      "name": "Anya",
+      "email": "anya@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "e07c",
+      "name": "Kitty Hans",
+      "email": "kittyhans@gmail.com",
+      "password": "34567890"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "51a1",
+      "title": "Dinner",
+      "description": "I have to go for a dinner date with my friends on Sunday.",
+      "timestamp": "8/21/2025, 8:57:56 PM",
+      "isEdited": false,
+      "visible": false,
+      "priority": "Medium",
+      "userId": "e07c"
+    },
+    {
+      "id": "b260",
+      "title": "Jogging",
+      "description": "I have to go for jogging tomorrow morning.",
+      "timestamp": "8/21/2025, 11:05:42 PM",
+      "isEdited": false,
+      "visible": false,
+      "priority": "Low",
+      "userId": "e07c",
+      "isComplete": false
+    }
+  ]
+}

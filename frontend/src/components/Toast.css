@@ -1,0 +1,17 @@
+.toast {
+    z-index: 9999;
+    width: fit-content;
+    background-color: white;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.toast-body {
+    color: black;
+}
+
+.link-blue {
+    color: blue;
+    text-decoration: none;
+}

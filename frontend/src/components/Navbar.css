@@ -1,0 +1,80 @@
+.navbar {
+  background-color: #022664;
+  font-family: "Fredoka One", cursive;
+  height: 73px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.navbar-brand {
+  margin-right: auto;
+  font-size: 26px;
+  color: hotpink !important;
+  /* comment added */
+  /* The below code prevents brand selection and copying */
+  user-select: none; /* No text selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.nav-link {
+  font-size: 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  /* The below code prevents brand selection and copying */
+  user-select: none; /* No text selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.nav-link:hover {
+  color: white;
+  font-weight: bold;
+}
+
+/* Active Page Link */
+.nav-link.active {
+  color: #00ffae !important;
+  font-weight: bold;
+}
+
+.tick-mark {
+  color: rgb(69, 182, 69);
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 23px;
+  margin-left: -15px;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.logout-btn button {
+  background-color: rgb(125, 38, 172);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 3px;     /* shifts it a little right */
+  transition: background-color 0.2s ease;
+  font-weight: 600;
+}
+
+.logout-btn button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+}
+
+.logout-btn {
+  margin-right: 15px;
+}

@@ -1,0 +1,39 @@
+.title-green {
+    color:rgb(0, 235, 55);
+}
+
+/* Overlay that darkens the background */
+.alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+/* Centered square box for the alert */
+.alert-box {
+    width: 400px;
+    height: 180px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.alert-text {
+    font-size: 18px;
+}
+
+.alert-button {
+    padding: 8px 15px;
+    min-width: 70px;
+    min-height: 35px;
+    font-size: 14px;
+}

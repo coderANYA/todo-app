@@ -1,0 +1,224 @@
+body {
+    overflow-x: hidden;    /* Only hide horizontal scroll */
+    overflow-y: auto;      /* Enable vertical scroll */
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.todo-edit-rows {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   width: 100%;
+}
+
+.todo-input-items {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;        /* comment added */
+    align-items: flex-start;       /* comment added */
+    width: 100%;               /* Full width of parent */
+    margin-bottom: 12px;      /* Spacing between fields */
+    flex: 1;                 /* Allows equal flex sizing */
+    min-width: 200px;       /* Prevents shrinking too small */
+}
+
+.todo-input-items label {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.todo-input-items input {
+    padding: 8px;
+    border: none;
+    width: 100%;       /* Full width of the container */
+    box-sizing: border-box;    /* Include padding in width */
+}
+    
+.todo-input-items input:focus {
+    outline: 3px solid rgb(241, 75, 158);
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 19px;      /* Adds space below navbar */
+}
+
+.todo-list-items {
+    background-color: #363333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    margin-bottom: 28px;
+    width: 80%;           /* Shrinks width of todo containers */
+    max-width: 600px;          /* Limits maximum width */
+    margin-left: auto;         /* Centers the container */
+    margin-right: auto;
+    box-shadow: 0px 3px 5px rgb(41, 39, 39);
+}
+
+.todo-list-items h3{
+    font-size: 27px;
+    color: rgb(0, 235, 55);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.todo-list-items p {
+    font-size: 17px;
+    color: white;
+    margin-top: 8px;
+    white-space: normal;         /* allow wrapping */
+    word-break: break-word;    /* break long words if needed */
+    overflow-wrap: anywhere;     /* ensures no overlap */
+    max-width: 80%;           /* prevent reaching toggle area */
+}
+
+.task-actions {
+   display: flex;
+   align-items: center;
+   gap: 10px;      /* Add space between icons and dropdown */
+}
+
+.task-actions .dropdown {
+   margin-left: 8px;
+}
+
+.dropdown-toggle {
+   font-size: 16px;
+   padding: 5px 10px;
+   border-radius: 6px;
+   cursor: pointer;
+}
+
+.icon {
+    font-size: 33px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: red;
+}
+
+.edit-icon {
+    font-size: 28px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.edit-icon:hover {
+    color: brown;
+}
+
+/* Remove Bootstrap's default active/focus styles */
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:active {
+    background-color: transparent !important;
+    color: inherit !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Hover colors for priority levels */
+.low-priority:hover {
+    background-color: #f8ee5b !important; 
+    color: black !important;
+}
+
+.medium-priority:hover {
+    background-color: #f1bb57 !important;
+    color: black !important;
+}
+
+.high-priority:hover {
+   background-color: #ff7070 !important;
+}
+
+.badge {
+    background-color: rgb(0,230,122);
+    color: black;
+    font-size: 18px;      
+    border-radius: 5px;
+    top: -15px;
+    right: -15px;
+    transform: none;
+}
+
+.form-check-input {
+    font-size: 22px;
+}
+
+.timestamp {
+    color: rgb(178, 176, 176);
+}
+
+.edit-buttons {
+   display: flex;
+   justify-content: flex-end;
+   gap: 4px;
+   width: 100%;         /* ✅ Stays inside the todo container */
+   margin-top: 10px;
+}
+
+.low-bg {
+   background-color: #f8ee5b;        
+   color: black;
+}
+
+.medium-bg {
+   background-color: #f1bb57;       
+   color: black;
+}
+
+.high-bg {
+   background-color: #ff7070;   
+   color: black;
+}
+
+.clear-all-btn {
+   background-color: rgb(247, 73, 73);
+   color: white;
+   position: fixed;
+   top: 95px;        /* Adjust depending on navbar height */
+   left: 45px;
+   z-index: 9999;
+   font-size: 19px;
+   font-weight: bold;
+   border: none;
+   padding: 9px;
+   border-radius: 7px;
+   cursor: pointer;
+}
+
+.clear-all-btn:hover {
+   background-color: rgb(220, 50, 50);
+   color: white;
+}
+
+.no-tasks-message h2 {
+   text-align: center;
+   font-size: 50px;
+   color: white;
+   margin-top: 33px;
+   font-weight: bold;
+}
+
+.no-tasks-message h3 {
+    color: white;
+    font-size: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.no-tasks-message a {
+   color: #351c75;
+   text-decoration: underline;
+   font-weight: bold;
+   cursor: pointer;
+}
+
